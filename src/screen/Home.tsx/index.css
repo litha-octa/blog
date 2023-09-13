@@ -1,0 +1,54 @@
+@font-face{
+    font-family: 'mistrully';
+    src: url('../../assets/fonts/Mistrully.ttf') format('truetype');
+}
+
+*{
+    margin:0;
+}
+
+.body{
+    flex: 1;
+    height: 100vh;
+    background-color: #F4F1E8;
+    padding: 20px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-self: center;
+}
+.hello{
+    font-weight: bold;
+    font-family: 'Poppins';
+    font-size: 10vw;
+}
+.name{
+    font-size: 10vw;
+    font-family: 'mistrully';
+}
+.quote{
+    font-size: 2.5vw;
+    font-family: 'Poppins';
+    color: #9B4819;
+}
+.box2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-self: center;
+    padding: 30px;
+    text-align: center;
+}
+.abt-me{
+    color: #9B4819;
+    margin-top: 60px;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'mistrully';
+    font-size: 2.5vw;
+}
+.abt-me:hover{
+color: blue;
+}
