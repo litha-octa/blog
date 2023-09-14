@@ -19,16 +19,16 @@
     flex-direction: row;
     align-self: center;
 }
-.hello{
+.home-hello{
     font-weight: bold;
     font-family: 'Poppins';
     font-size: 10vw;
 }
-.name{
+.home-name{
     font-size: 10vw;
     font-family: 'mistrully';
 }
-.quote{
+.home-quote{
     font-size: 2.5vw;
     font-family: 'Poppins';
     color: #9B4819;
