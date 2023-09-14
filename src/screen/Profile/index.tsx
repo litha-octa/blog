@@ -13,6 +13,11 @@ const Profile = () => {
         backgroundImage={`url(${myData.navPic})`}
       ></Box>
       <Box className="profile-box">
+        <Image
+          className="profile-pic"
+          src={myData.profilePic}
+          alt="drive image"
+        />
         <Box className="profile-text-container">
           <Text className="profile-fullname">{myData.fullname}</Text>
           <Text className="profile-resume">{myData.resume}</Text>
@@ -31,11 +36,6 @@ const Profile = () => {
             </Box>
           </Box>
         </Box>
-        <Image
-          className="profile-pic"
-          src={myData.profilePic}
-          alt="drive image"
-        />
       </Box>
     </Box>
   );
