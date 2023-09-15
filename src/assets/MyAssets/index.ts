@@ -11,7 +11,7 @@ export const myData= {
         'https://drive.google.com/uc?export=view&id=10URsdW9X5_lNaI3kRWPyTLXA33vSGYxt',
         'https://drive.google.com/uc?export=view&id=10SGho5_1SPUWAkNKEHJQjMaLcBv1LyNm',
         'https://drive.google.com/uc?export=view&id=10W3eQfawd9lMcT4294pMg9pUd0LsMTRc',
-        'https://drive.google.com/uc?export=view&id=0UWZGzxJ_qdkwo8ye12rNWya8byxZsbO',
+        'https://drive.google.com/uc?export=view&id=10UWZGzxJ_qdkwo8ye12rNWya8byxZsbO',
         'https://drive.google.com/uc?export=view&id=10_dwZIr8JpyoKOjZE1B-i_apJiltf82H',
         // 'https://drive.google.com/uc?export=view&id=',
     ]
