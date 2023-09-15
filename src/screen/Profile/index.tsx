@@ -1,9 +1,12 @@
 import { Box, Text, Image, Link } from "@chakra-ui/react";
 import "./index.css";
+import CardItem from "../../components/CardItem";
 import { myData } from "../../assets/MyAssets";
 import { WAIcon, EmailIcon, LinkedinIcon } from "../../assets/img";
+import { useNavigate } from "react-router-dom";
 
 const Profile = () => {
+  const navigate = useNavigate();
   return (
     <Box className="profile-body">
       <Box
@@ -36,6 +39,13 @@ const Profile = () => {
             </Box>
           </Box>
         </Box>
+      </Box>
+      <Box className="profile-bottom-container">
+        <CardItem
+          title="Cats Album"
+          img={myData.catsPic[1]}
+          action={() => navigate("/Album")}
+        />
       </Box>
     </Box>
   );

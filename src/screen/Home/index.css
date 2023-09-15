@@ -2,7 +2,13 @@
     font-family: 'mistrully';
     src: url('../../assets/fonts/Mistrully.ttf') format('truetype');
 }
-
+:root{
+    --whiteBG: #F4F1E8;
+    --brownTXT:#9B4819;
+    --brownBG:#b15d2c;
+    --black: black;
+    --blue:blue;
+}
 *{
     margin:0;
 }
@@ -10,7 +16,7 @@
 .body{
     flex: 1;
     height: 100vh;
-    background-color: #F4F1E8;
+    background-color:var(--whiteBG);
     padding: 20px;
 }
 .box{
@@ -31,7 +37,7 @@
 .home-quote{
     font-size: 2.5vw;
     font-family: 'Poppins';
-    color: #9B4819;
+    color:var(--brownTXT);
 }
 .box2 {
     display: flex;
@@ -42,7 +48,7 @@
     text-align: center;
 }
 .abt-me{
-    color: #9B4819;
+    color: var(--brownTXT);
     margin-top: 60px;
     text-align: center;
     cursor: pointer;
@@ -50,5 +56,5 @@
     font-size: 2.5vw;
 }
 .abt-me:hover{
-color: blue;
+color: var(--blue);
 }
