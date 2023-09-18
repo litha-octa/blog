@@ -9,7 +9,7 @@ const Album = () => {
       {myData?.catsPic.map((e: string, index: number) => {
         return (
           <Box>
-            <Image src={e} />
+            <Image src={e} alt={`catPic-${index}`} key={index} />
           </Box>
         );
       })}

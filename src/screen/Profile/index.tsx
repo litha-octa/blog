@@ -42,6 +42,13 @@ const Profile = () => {
       </Box>
       <Box className="profile-bottom-container">
         <CardItem
+          title="Mini Program"
+          img={
+            "https://tse3.mm.bing.net/th?id=OIP.AoGRRPtkaI-93757ZJKKKgHaFE&pid=Api&P=0&h=180"
+          }
+          action={() => navigate("/Mini-Program")}
+        />
+        <CardItem
           title="Cats Album"
           img={myData.catsPic[1]}
           action={() => navigate("/Album")}
