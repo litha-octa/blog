@@ -2,22 +2,22 @@
 .title-mini-app{
     text-align: center;
     font-size: 28px;
-    /* font-weight: bold; */
     font-family: 'mistrully';
     position: relative;
 }
 .card-display-body{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: auto;
-    width: 100%;
-    justify-content: space-between;
+    /* width: 100%; */
+    justify-content: flex-start;
     position: relative;
 }
 .card-display{
-    width: 20%;
-    min-width: 150px;
+    /* max-width: 300px;
+    min-width: 250px; */
+    width: 250px;
     padding: 15px;
     border-radius: 15px;
     background-color: var(--brownBG2);
@@ -33,13 +33,12 @@
 }
 .card-desc{
     background-color: var(--brownBG2);
-    width: 75%;
+    /* width: 100%; */
     height: auto;
     padding: 10px;
     color: aqua;
     border-radius: 15px;
     min-width: 250px;
-    /* max-width: 100%; */
 }
 .ornament{
     position: absolute;
@@ -89,10 +88,15 @@
     color: var(--blue);
 }
 .img-display-desc {
-    width: 300px;
+    width: 180px;
     height: auto;
     align-self: center;
     border-radius: 15px;
     margin-right: 10px;
     margin-left: 10px;
+}
+
+.icon-back{
+    width: 30px;
+    height: 30px;
 }

@@ -1,27 +1,39 @@
 import React from "react";
-import { Box, Text, Link, Image } from "@chakra-ui/react";
+import { Box, Text, Link, Image, Icon } from "@chakra-ui/react";
 import "./index.css";
 import { miniApp } from "../../assets/MyAssets";
+import { LeftArrow } from "../../assets/img";
 
 const MiniProject = () => {
   const Display = ({ item }: any) => {
     const [isCollaps, setIsCollaps] = React.useState(true);
     return (
       <Box className="card-display-body">
-        <Box
-          className="card-display"
-          onClick={() => {
-            setIsCollaps(!isCollaps);
-          }}
-        >
-          <Text className="display-title">{item?.nameApp}</Text>
+        {isCollaps && (
+          <Box
+            className="card-display"
+            onClick={() => {
+              setIsCollaps(!isCollaps);
+            }}
+          >
+            <Text className="display-title">{item?.nameApp}</Text>
 
-          {item?.pic?.length > 0 ? (
-            <Image src={item?.pic?.[0]} className="img-display" />
-          ) : null}
-        </Box>
+            {item?.pic?.length > 0 ? (
+              <Image src={item?.pic?.[0]} className="img-display" />
+            ) : null}
+          </Box>
+        )}
         {!isCollaps && (
           <Box className="card-desc">
+            <Box
+              onClick={() => {
+                setIsCollaps(!isCollaps);
+              }}
+            >
+              <Image src={LeftArrow} className="icon-back" />
+            </Box>
+            <Text className="display-title">{item?.nameApp}</Text>
+
             <Text className="display-desc">Description :</Text>
             <Text className="display-desc">{item?.description}</Text>
             {item?.live && (
