@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text, Link, Image, Icon } from "@chakra-ui/react";
+import { Box, Text, Link, Image } from "@chakra-ui/react";
 import "./index.css";
 import { miniApp } from "../../assets/MyAssets";
 import { LeftArrow } from "../../assets/img";

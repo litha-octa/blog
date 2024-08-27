@@ -1,28 +1,16 @@
 import { Box, Text, Image, Link } from "@chakra-ui/react";
 import "./index.css";
-import CardItem from "../../components/CardItem";
 import { myData } from "../../assets/MyAssets";
 import { WAIcon, EmailIcon, LinkedinIcon } from "../../assets/img";
-import { useNavigate } from "react-router-dom";
 import { Nav } from "../../components/Nav";
 
 const Profile = () => {
-  const navigate = useNavigate();
   return (
     <Box className="body">
       <Nav/>
-      {/* <Box
-        className="profile-nav"
-        backgroundPosition="center"
-        filter="grayscale(10%)"
-        backgroundImage={`url(${myData.navPic})`}
-      ></Box> */}
+     
       <Box className="profile-box">
-        {/* <Image
-          className="profile-pic"
-          src={myData.profilePic}
-          alt="drive image"
-        /> */}
+       
         <Box className="profile-text-container">
           <Text className="profile-fullname">{myData.fullname}</Text>
           <Text className="profile-resume" noOfLines={[1, 2, 3]} fontSize={'md'}>{myData.resume}</Text>
@@ -43,20 +31,6 @@ const Profile = () => {
           </Box>
         </Box>
       </Box>
-      {/* <Box className="profile-bottom-container">
-        <CardItem
-          title="Mini Program"
-          img={
-            "https://tse3.mm.bing.net/th?id=OIP.AoGRRPtkaI-93757ZJKKKgHaFE&pid=Api&P=0&h=180"
-          }
-          action={() => navigate("/Mini-Program")}
-        />
-        <CardItem
-          title="Cats Album"
-          img={myData.catsPic[1]}
-          action={() => navigate("/Album")}
-        />
-      </Box> */}
     </Box>
   );
 };

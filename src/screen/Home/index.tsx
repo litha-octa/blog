@@ -1,11 +1,9 @@
 import { Box, Text} from "@chakra-ui/react";
 import "./index.css";
-import { useNavigate } from "react-router-dom";
 import { Nav } from "../../components/Nav";
 import { myData } from "../../assets/MyAssets";
 
 const Home = () => {
-  const navigate = useNavigate();
   return (
     <Box className="body">
       <Nav/>
