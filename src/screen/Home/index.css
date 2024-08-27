@@ -14,31 +14,36 @@
 }
 *{
     margin:0;
+    background-color:var(--whiteBG);
 }
 
 .body{
     flex: 1;
-    height: 100vh;
-    background-color:var(--whiteBG);
     padding: 20px;
 }
 .box{
+    padding: 20px;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-self: center;
 }
+.heading{
+    display: flex;
+    justify-content: flex-end;
+
+}
 .home-hello{
     font-weight: bold;
     font-family: 'Poppins';
-    font-size: 10vw;
+    font-size: 7vw;
 }
 .home-name{
-    font-size: 10vw;
+    font-size: 5vw;
     font-family: 'mistrully';
 }
 .home-quote{
-    font-size: 2.5vw;
+    font-size: 2vw;
     font-family: 'Poppins';
     color:var(--brownTXT);
 }

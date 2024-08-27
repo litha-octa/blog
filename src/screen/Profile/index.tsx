@@ -4,28 +4,31 @@ import CardItem from "../../components/CardItem";
 import { myData } from "../../assets/MyAssets";
 import { WAIcon, EmailIcon, LinkedinIcon } from "../../assets/img";
 import { useNavigate } from "react-router-dom";
+import { Nav } from "../../components/Nav";
 
 const Profile = () => {
   const navigate = useNavigate();
   return (
-    <Box className="profile-body">
-      <Box
+    <Box className="body">
+      <Nav/>
+      {/* <Box
         className="profile-nav"
         backgroundPosition="center"
         filter="grayscale(10%)"
         backgroundImage={`url(${myData.navPic})`}
-      ></Box>
+      ></Box> */}
       <Box className="profile-box">
-        <Image
+        {/* <Image
           className="profile-pic"
           src={myData.profilePic}
           alt="drive image"
-        />
+        /> */}
         <Box className="profile-text-container">
           <Text className="profile-fullname">{myData.fullname}</Text>
-          <Text className="profile-resume">{myData.resume}</Text>
+          <Text className="profile-resume" noOfLines={[1, 2, 3]} fontSize={'md'}>{myData.resume}</Text>
           <Box className="profile-contact-box">
             <Text className="profile-contact-text">Contact me</Text>
+            
             <Box>
               <Link href={myData.email} isExternal>
                 <Image src={EmailIcon} className="icon-contact" />
@@ -40,7 +43,7 @@ const Profile = () => {
           </Box>
         </Box>
       </Box>
-      <Box className="profile-bottom-container">
+      {/* <Box className="profile-bottom-container">
         <CardItem
           title="Mini Program"
           img={
@@ -53,7 +56,7 @@ const Profile = () => {
           img={myData.catsPic[1]}
           action={() => navigate("/Album")}
         />
-      </Box>
+      </Box> */}
     </Box>
   );
 };

@@ -1,6 +1,8 @@
 export const myData= {
     fullname : 'Litha Octa Delistia',
-    resume:"   I am a React Native Developer. I experienced app development, as you  can see in my portfolio. Although I also love things artsy, like painting, music and writing poetry. And something else that I like most is cats. I love their fluffy fur and cute faces. You can see my collection of cat pictures on my album and let me know which one is your favorite. And sure, as a girl, I'm obsessed with girls' clothes and other cute stuff and also make-up and skincare enthusiasts. ",
+    name:'Litha',
+    role:'Front End Developer',
+    resume:"Seorang frontend developer dengan semangat tinggi untuk mempelajari hal-hal baru, saya selalu tertarik untuk mengeksplorasi teknologi terbaru dan menerapkannya dalam proyek-proyek saya. Dengan keahlian mendalam di React JS dan React Native, saya berkomitmen untuk menciptakan antarmuka pengguna yang intuitif dan performa tinggi.Kecintaan saya terhadap pengembangan frontend mendorong saya untuk selalu mencari cara baru dalam menyelesaikan tantangan teknis dan menghadirkan pengalaman pengguna yang luar biasa. Saya sangat antusias untuk terus berkembang dan berkolaborasi dalam proyek-proyek inovatif. Mari terhubung dan lihat bagaimana kita bisa menciptakan sesuatu yang hebat bersama!",
     navPic:'https://drive.google.com/uc?export=view&id=1-TdaJCVhITZDS20EYyBhqhbHmj8QtqGw',
     profilePic:'https://drive.google.com/uc?export=view&id=1-7xlHe3qaaPXgqIP7d-kddA8ye0YoCaY',
     linkedin:'https://www.linkedin.com/in/lithaoctadelistia/',
