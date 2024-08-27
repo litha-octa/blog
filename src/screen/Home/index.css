@@ -2,6 +2,10 @@
     font-family: 'mistrully';
     src: url('../../assets/fonts/Mistrully.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'quicksand';
+    src: url('../../assets/fonts/Quicksand.ttf') format('truetype');
+}
 :root{
     --whiteBG: #F4F1E8;
     --brownTXT:#9B4819;
@@ -35,16 +39,13 @@
 }
 .home-hello{
     font-weight: bold;
-    font-family: 'Poppins';
-    font-size: 7vw;
+    font-family: 'quicksand';
 }
 .home-name{
-    font-size: 5vw;
     font-family: 'mistrully';
 }
 .home-quote{
-    font-size: 2vw;
-    font-family: 'Poppins';
+    font-family: 'quicksand';
     color:var(--brownTXT);
 }
 .box2 {
@@ -57,12 +58,13 @@
 }
 .abt-me{
     color: var(--brownTXT);
-    margin-top: 60px;
-    text-align: center;
+    margin-top: 5px;
     cursor: pointer;
-    font-family: 'mistrully';
-    font-size: 2.5vw;
+    font-family: 'quicksand';
+    text-decoration: none;
+    text-align: left;
+    font-size: 17px;
 }
-.abt-me:hover{
-color: var(--blue);
+.box-mobile-view{
+    margin-top: 60px;
 }

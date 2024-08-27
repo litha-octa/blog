@@ -1,34 +1,21 @@
-import { Box, Text, Image, Link } from "@chakra-ui/react";
+import { Box, Text} from "@chakra-ui/react";
 import "./index.css";
 import { myData } from "../../assets/MyAssets";
-import { WAIcon, EmailIcon, LinkedinIcon } from "../../assets/img";
 import { Nav } from "../../components/Nav";
+import { isMobile } from "react-device-detect";
+import { TabBio } from "../../components/TabBio";
 
 const Profile = () => {
   return (
     <Box className="body">
       <Nav/>
      
-      <Box className="profile-box">
-       
-        <Box className="profile-text-container">
-          <Text className="profile-fullname">{myData.fullname}</Text>
-          <Text className="profile-resume" noOfLines={[1, 2, 3]} fontSize={'md'}>{myData.resume}</Text>
-          <Box className="profile-contact-box">
-            <Text className="profile-contact-text">Contact me</Text>
-            
-            <Box>
-              <Link href={myData.email} isExternal>
-                <Image src={EmailIcon} className="icon-contact" />
-              </Link>
-              <Link href={myData.wa} isExternal>
-                <Image src={WAIcon} className="icon-contact" />
-              </Link>
-              <Link href={myData.linkedin} isExternal>
-                <Image src={LinkedinIcon} className="icon-contact" />
-              </Link>
-            </Box>
-          </Box>
+      <Box className="profile-box" w={isMobile? '100%' : '40%'}>
+        <Box className="profile-text-container" >
+          <Text className="profile-fullname" fontSize={isMobile ? 40 : 50}>{myData.fullname}</Text>
+          <Text className="profile-resume" noOfLines={[1, 2, 3]} fontSize={isMobile ? 20 : 60}>{myData.resume}</Text>
+          <Text className="profile-bio" fontSize={isMobile ? 30 : 30}>My Biodata</Text>
+          <TabBio/>
         </Box>
       </Box>
     </Box>

@@ -1,7 +1,9 @@
-
+@font-face {
+    font-family: 'quicksand';
+    src: url('../../assets/fonts/Quicksand.ttf') format('truetype');
+}
 .profile-box{
     display: flex;
-    flex-direction: row-reverse;
     flex-wrap: wrap;
     width: auto;
     margin: 0 auto;
@@ -16,14 +18,22 @@
 .profile-fullname{
     font-family: 'mistrully';
     color: var(--black);
-    font-size: 3vw;
+    text-align: center;
+}
+.profile-bio{
+    margin-top: 30px;
+    font-family: 'quicksand';
+    color: var(--black);
+    text-align: left;
+    font-weight: bold;
 }
 .profile-text-container{
     height: 200px;
 }
 .profile-resume{
-    font-family: 'Poppins';
+    font-family: 'quicksand';
     color: var(--brownTXT);
+    text-align: center;
 }
 .profile-nav{
     width: 100%;
@@ -37,7 +47,7 @@
 
 }
 .profile-contact-text{
-    font-size: 2vw;
+    font-size: 18px;
     font-family: 'mistrully';
     color: var(--black);
     display: flex;

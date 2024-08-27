@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Box, Text, Image } from "@chakra-ui/react";
-import "./CardItem.css";
+import "./component.css";
 import { myData } from "../assets/MyAssets";
 
 type Props = {

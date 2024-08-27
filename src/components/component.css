@@ -1,3 +1,11 @@
+@font-face{
+    font-family: 'mistrully';
+    src: url('../assets/fonts/Mistrully.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'quicksand';
+    src: url('../assets/fonts/Quicksand.ttf') format('truetype');
+}
 .card-body{
     background-color: var(--whiteBG);
     border-radius: 5px;
@@ -31,4 +39,19 @@ border-bottom-right-radius: 40px;
 }
 .card-text:hover{
     color: var(--blue);
+}
+.breadcrumblink{
+    color: var( --brownTXT);
+    text-decoration: none;
+    font-family: 'quicksand';
+}
+.breadcrumblink :hover{
+    color: var(--blue);
+    text-decoration: solid;
+}
+.tab-row{
+    width: 100%;
+    margin-top: 20px;
+    font-family: 'quicksand';
+    color: var( --brownTXT);
 }

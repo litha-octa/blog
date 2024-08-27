@@ -1,21 +1,27 @@
 import { Heading, Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react'
+import { isBrowser } from 'react-device-detect'
+import './component.css'
 
 export const Nav =()=>{
     return(
-<Heading className="heading" size='lg' fontSize='2vw'>
-      <Breadcrumb>
-  <BreadcrumbItem>
-    <BreadcrumbLink href='#'>Home</BreadcrumbLink>
-  </BreadcrumbItem>
-
-  <BreadcrumbItem>
-    <BreadcrumbLink href='#/profile'>Profile</BreadcrumbLink>
-  </BreadcrumbItem>
-
+<Heading className="heading" size='md' fontSize='1.5vw'>
+  {isBrowser && (
+    <Breadcrumb>
   <BreadcrumbItem >
-    <BreadcrumbLink href='#'>Project</BreadcrumbLink>
+    <BreadcrumbLink className={'breadcrumblink'} href='#/profile'>Profile</BreadcrumbLink>
   </BreadcrumbItem>
-</Breadcrumb>
+  <BreadcrumbItem>
+    <BreadcrumbLink className={'breadcrumblink'} href='#'>Project</BreadcrumbLink>
+  </BreadcrumbItem>
+  <BreadcrumbItem>
+    <BreadcrumbLink className={'breadcrumblink'} href='#'>Resume</BreadcrumbLink>
+  </BreadcrumbItem>
+  <BreadcrumbItem >
+    <BreadcrumbLink className={'breadcrumblink'} href='#'>Contact</BreadcrumbLink>
+  </BreadcrumbItem>
+    </Breadcrumb>
+  )}
+      
       </Heading>
     )
-}
+  }
