@@ -68,3 +68,15 @@
 .box-mobile-view{
     margin-top: 60px;
 }
+.icon-contact{
+    width: 40px;
+    height: 40px;
+}
+.contact-box{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.contact-btn{
+margin:30px
+}

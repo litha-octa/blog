@@ -7,7 +7,7 @@ export const App = () => {
       <div>
         <Routes>
           <Route path="/*" element={<Home />} />
-          <Route path="/Profile" element={<Profile />} />
+          {/* <Route path="/Profile" element={<Profile />} /> */}
           <Route path="/Album" element={<Album />} />
           <Route path="/Mini-Program" element={<MiniProject />} />
         </Routes>

@@ -12,6 +12,7 @@ export const myData= {
     profilePic:'https://drive.google.com/uc?export=view&id=1-7xlHe3qaaPXgqIP7d-kddA8ye0YoCaY',
     linkedin:'https://www.linkedin.com/in/lithaoctadelistia/',
     wa:'https://api.whatsapp.com/send?phone=6283811410725&text=Hi%20Litha%20!%20%0A',
+    github:'https://github.com/litha-octa',
     email:'mailto:delistiaoct@gmail.com',
     catsPic : [
         'https://drive.google.com/uc?export=view&id=10URsdW9X5_lNaI3kRWPyTLXA33vSGYxt',
@@ -25,8 +26,8 @@ export const myData= {
 
 export const miniApp = [
     {
-        nameApp: 'Github Repositories Explorer',
-        description: "This is an easy way to search for a github repository by username. you're interested, you can try this app by clicking this link below.",
+        name: 'Github Repositories Explorer',
+        description: "This is an easy way to search for a github repository by username. you can try this app by clicking this link below.",
         pic:[
                 'https://drive.google.com/uc?export=view&id=12Y_aCmatqzGxV_a_oJlxDmaOqNzIRuXC',
                 'https://drive.google.com/uc?export=view&id=12aR9DehvSoKLgLb_XBw-7WhyS-Wi2KXA',

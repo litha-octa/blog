@@ -8,7 +8,7 @@ import { TabBio } from "../../components/TabBio";
 const Profile = () => {
   return (
     <Box className="body">
-      <Nav/>
+      {/* <Nav/> */}
      
       <Box className="profile-box" w={isMobile? '100%' : '40%'}>
         <Box className="profile-text-container" >

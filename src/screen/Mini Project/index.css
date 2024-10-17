@@ -1,7 +1,10 @@
-
+.body{
+    flex: 1;
+    padding: 20px;
+}
 .title-mini-app{
     text-align: center;
-    font-size: 28px;
+    font-size: 45px;
     font-family: 'mistrully';
     position: relative;
 }
@@ -31,14 +34,20 @@
     border-radius: 15px;
     margin: 0 auto;
 }
-.card-desc{
-    background-color: var(--brownBG2);
+.card-title{
+    color: var(--brownBG2);
     /* width: 100%; */
     height: auto;
     padding: 10px;
-    color: aqua;
     border-radius: 15px;
     min-width: 250px;
+    font-size: 30px;
+    font-family: 'quicksand';
+}
+.card-desc{
+    color: var(--brownBG2);
+    font-family: 'quicksand';
+    font-size: 20px;
 }
 .ornament{
     position: absolute;
