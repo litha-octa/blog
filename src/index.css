@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: #0c0c0e;
+    color: #f0eee8;
+    font-family: 'Syne', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.5;
+  }
+}
+
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fillBar {
+  to { transform: scaleX(1); }
+}
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; box-shadow: 0 0 8px #c8f060; }
+  50% { opacity: 0.4; box-shadow: 0 0 3px #c8f060; }
+}
+@keyframes newBadgePulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fadeUp 0.6s ease forwards;
+}
+.skill-bar {
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: fillBar 1s ease forwards;
+}
+.pulse-dot {
+  animation: pulseDot 2s ease-in-out infinite;
+}
+.badge-dot {
+  animation: newBadgePulse 2s ease-in-out infinite;
+}
+.card-hover {
+  transition: border-color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  border-color: rgba(200,240,96,0.5) !important;
+  border-width: 2px !important;
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 12px 40px rgba(200,240,96,0.15), 0 4px 15px rgba(0,0,0,0.4);
+}
+.card-hover:hover .card-visual {
+  transform: scale(1.05);
+}
+.card-visual {
+  transition: transform 0.4s ease;
+}

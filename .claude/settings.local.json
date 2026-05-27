@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"/c/Users/Litha Octa/Documents/litha-portfolio\" && npm install react-router-dom)"
+    ]
+  }
+}
