@@ -1,30 +1,15 @@
 # Litha Octa Delistia — Portfolio
 
-Frontend developer portfolio built with React + Vite + Tailwind CSS.
+Next.js (App Router) + TypeScript + Tailwind CSS, exported as a static site.
 
-## Tech Stack
-- React 18
-- Vite 5
-- Tailwind CSS 3
-
-## Development
 ```bash
 npm install
-npm run dev
+npm run dev     # http://localhost:3000
+npm run build   # static export to out/
 ```
 
-## Build
-```bash
-npm run build
-```
+Content lives in `src/content/*.ts`. See `TODO.md` for placeholders still to fill in.
 
-## Deploy ke Vercel
-1. Push ke GitHub
-2. Import repo di vercel.com
-3. Deploy otomatis — no config needed
+Netlify: build command `npm run build`, publish directory `out` (already set in `netlify.toml`).
 
-## Deploy ke Netlify
-1. Push ke GitHub
-2. Import di netlify.com
-3. Build command: `npm run build`
-4. Publish directory: `dist`
+The previous Vite version of the site is kept in `_legacy-vite/` for reference and can be deleted.
